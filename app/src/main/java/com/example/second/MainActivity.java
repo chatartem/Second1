@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
     }
 
     public void onInfoClick(View b){
-        Intent i= new Intent(this, ActivityInfo.class);
+        Intent i= new Intent(this, InfoActivity.class);
         startActivity(i);
     }
 }
