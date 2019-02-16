@@ -58,6 +58,7 @@ public class CalcController {
 
     public void vychislit() {
         B = nc.getValue();
+        nc.clear();
         if (oper == Operaciia.SLOJENIE) {
             oper = null;
             Double R = A + B;

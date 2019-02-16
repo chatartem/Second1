@@ -88,7 +88,8 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:onClick="onInfoClick"
+                android:text="INFO" />
         </LinearLayout>
 
         <LinearLayout
@@ -247,6 +248,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
+                android:onClick="onDot"
                 android:text="."
                 android:textSize="36sp" />
 

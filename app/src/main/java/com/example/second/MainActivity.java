@@ -1,6 +1,8 @@
 package com.example.second;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -63,5 +65,10 @@ public class MainActivity extends Activity {
 
     public void onCalcClick(View b){
         cc.vychislit();
+    }
+
+    public void onInfoClick(View b){
+        Intent i= new Intent(this, ActivityInfo.class);
+        startActivity(i);
     }
 }
