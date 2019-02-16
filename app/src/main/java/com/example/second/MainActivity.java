@@ -53,6 +53,10 @@ public class MainActivity extends Activity {
 
     }
 
+    public void onDot(View b){
+        nc.addDot();
+    }
+
     public void onDelitClick(View b){
         cc.delit();
     }

@@ -7,10 +7,12 @@ public class NumberController {
     String displayValue;
     TextView display;
     Boolean error;
+    boolean dot;
 
     public NumberController() {
         displayValue = new String();
         error = false;
+        dot = false;
     }
 
     public void setDisplay(TextView display) {
@@ -20,6 +22,10 @@ public class NumberController {
     public void addDigit(int d){
         if ((d>=0)&&(d<=9)&&(displayValue.length()<12)){
             if ((d!=0)||(displayValue.length()!=0)) {
+                if((dot)&&(!displayValue.contains("."))){
+                    displayValue=displayValue+".";
+                }
+
                 displayValue = displayValue + Integer.toString(d);
                 display();
             }
@@ -28,8 +34,15 @@ public class NumberController {
 
     public void clear(){
         displayValue = "";
+        dot = false;
         error = false;
         display();
+    }
+
+    public void addDot(){
+        if(!dot){
+            dot = true;
+        }
     }
 
     public void clearLastDigit(){

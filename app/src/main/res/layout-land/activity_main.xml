@@ -75,6 +75,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
+                android:onClick="onDelitClick"
                 android:text="/"
                 android:textSize="36sp" />
 
@@ -144,6 +145,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
+                android:onClick="onUmnojitClick"
                 android:text="x"
                 android:textSize="36sp" />
 
@@ -213,6 +215,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
+                android:onClick="onMinusClick"
                 android:text="-"
                 android:textSize="36sp" />
 
@@ -282,6 +285,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
+                android:onClick="onPlusClick"
                 android:text="+"
                 android:textSize="36sp" />
 
@@ -294,6 +298,7 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
+                android:onClick="onCalcClick"
                 android:text="="
                 android:textSize="36sp" />
         </LinearLayout>
